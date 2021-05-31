@@ -1,0 +1,15 @@
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/bin/Debug/net5.0/ex00.deps.json
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/bin/Debug/net5.0/ex00.runtimeconfig.json
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/bin/Debug/net5.0/ex00.runtimeconfig.dev.json
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/bin/Debug/net5.0/ex00.dll
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/bin/Debug/net5.0/ref/ex00.dll
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/bin/Debug/net5.0/ex00.pdb
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/obj/Debug/net5.0/ex00.csprojAssemblyReference.cache
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/obj/Debug/net5.0/ex00.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/obj/Debug/net5.0/ex00.AssemblyInfoInputs.cache
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/obj/Debug/net5.0/ex00.AssemblyInfo.cs
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/obj/Debug/net5.0/ex00.csproj.CoreCompileInputs.cache
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/obj/Debug/net5.0/ex00.dll
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/obj/Debug/net5.0/ref/ex00.dll
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/obj/Debug/net5.0/ex00.pdb
+/Users/bbooster/Documents/c_sharp_piscine/day01/ex00/obj/Debug/net5.0/ex00.genruntimeconfig.cache

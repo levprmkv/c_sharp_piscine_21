@@ -1,23 +1,9 @@
 ﻿using System;
 using System.IO;
+using Models;
 
 namespace ex00
 {
-	struct ExchengerRate
-	{
-		public double RUBtoEUR;
-		public double RUBtoUSD;
-		public double EURtoRUB;
-		public double EURtoUSD;
-		public double USDtoEUR;
-		public double USDtoRUB;
-	}
-	struct ExchengerSum
-    {
-    	public double EUR;
-		public double RUB;
-		public double USD;
-    }
     class Program
     {
         static void Main(string[] args)
@@ -31,10 +17,10 @@ namespace ex00
 			splited_values = args[0].Split(' ');
 			path = args[1];
 
-			double.TryParse(splited_values[0], out value.EUR);
-			double.TryParse(splited_values[0], out value.RUB);
-			double.TryParse(splited_values[0], out value.USD);
+			double.TryParse(splited_values[0], out value.SUM);
 
+			Console.WriteLine("Сумма в исходной валюте: " + value.SUM.ToString("0.00") + " " + splited_values[1]);
+			
 			if (splited_values[1] == "RUB")
 			{
 				path = path + "/RUB.txt";
@@ -45,9 +31,8 @@ namespace ex00
 				double.TryParse(course[0], out rates.RUBtoUSD);
 				double.TryParse(course[1], out rates.RUBtoEUR);
 
-				Console.WriteLine("Сумма в исходной валюте: " + value.RUB.ToString("0.00") + " " + splited_values[1]);
-				Console.WriteLine("Сумма в USD: " + (value.RUB * rates.RUBtoUSD).ToString("0.00") + " USD");
-				Console.WriteLine("Сумма в EUR: " + (value.RUB * rates.RUBtoEUR).ToString("0.00") + " EUR");
+				Console.WriteLine("Сумма в USD: " + (value.SUM * rates.RUBtoUSD).ToString("0.00") + " USD");
+				Console.WriteLine("Сумма в EUR: " + (value.SUM * rates.RUBtoEUR).ToString("0.00") + " EUR");
 				return ;
 			}
 			else if (splited_values[1] == "EUR")
@@ -60,9 +45,8 @@ namespace ex00
 				double.TryParse(course[0], out rates.EURtoUSD);
 				double.TryParse(course[1], out rates.EURtoRUB);
 
-				Console.WriteLine("Сумма в исходной валюте: " + value.EUR.ToString("0.00") + " " + splited_values[1]);
-				Console.WriteLine("Сумма в USD: " + (value.EUR * rates.EURtoUSD).ToString("0.00") + " USD");
-				Console.WriteLine("Сумма в RUB: " + (value.EUR * rates.EURtoRUB).ToString("0.00") + " RUB");
+				Console.WriteLine("Сумма в USD: " + (value.SUM * rates.EURtoUSD).ToString("0.00") + " USD");
+				Console.WriteLine("Сумма в RUB: " + (value.SUM * rates.EURtoRUB).ToString("0.00") + " RUB");
 				return ;
 			}
 			else if (splited_values[1] == "USD")
@@ -75,9 +59,8 @@ namespace ex00
 				double.TryParse(course[0], out rates.USDtoRUB);
 				double.TryParse(course[1], out rates.USDtoEUR);
 
-				Console.WriteLine("Сумма в исходной валюте: " + value.USD.ToString("0.00") + " " + splited_values[1]);
-				Console.WriteLine("Сумма в RUB: " + (value.USD * rates.USDtoRUB).ToString("0.00") + " RUB");
-				Console.WriteLine("Сумма в EUR: " + (value.USD * rates.USDtoEUR).ToString("0.00") + " EUR");
+				Console.WriteLine("Сумма в RUB: " + (value.SUM * rates.USDtoRUB).ToString("0.00") + " RUB");
+				Console.WriteLine("Сумма в EUR: " + (value.SUM * rates.USDtoEUR).ToString("0.00") + " EUR");
 				return ;
 			}
         }
